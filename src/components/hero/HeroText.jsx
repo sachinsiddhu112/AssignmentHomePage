@@ -14,7 +14,7 @@ export default function HeroText() {
                         make friends while doing it.
                     </span>
                 </div>
-                <button className='w-[250px] h-[58px] rounded-[10px] bg-gradient-to-r from-[purple] to-[#755EFF54]'>Register Now</button>
+                <button className='w-[250px] h-[58px] rounded-[10px] bg-gradient-to-r from-blue-400 to-blue-800 shadow-md shadow-blue-400 '>Register Now</button>
                 <div className='flex flex-col justify-center items-center'>
                 <span className=' w-fit font-[500] text-[24px]'>
                     Track "TV Shows, Animes, K-Dramas 

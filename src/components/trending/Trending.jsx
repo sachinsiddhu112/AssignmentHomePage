@@ -36,7 +36,7 @@ export default function Trending() {
         </div>
         
       </div>
-      <button className='w-[250px] h-[58px] rounded-[10px] bg-[#115FA0]'>Register Now</button>
+      <button className='w-[250px] h-[58px] rounded-[10px] bg-gradient-to-r from-[purple] to-[#755EFF54] shadow-md shadow-purple-500 '>Register Now</button>
     </div>
   )
 }
