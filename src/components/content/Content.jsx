@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Movies from './Movies'
-import TVShows from './TvShows'
+import TVShows from './TVShows'
 import Anime from './Anime'
 import Drama from './Drama'
 export default function Content() {
