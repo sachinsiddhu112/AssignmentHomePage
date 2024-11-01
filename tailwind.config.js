@@ -13,8 +13,12 @@ export default {
       backgroundImage: {
         'heroBg': "url('/src/assets/bgcopy.png')",
         'background2':"url('/src/assets/background2.png')"
+      },
+      boxShadow:{
+        'commShadow':"0px 1px 4px gray"
       }
     },
   },
   plugins: [],
 }
+

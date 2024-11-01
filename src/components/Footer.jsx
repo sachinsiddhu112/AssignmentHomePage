@@ -6,7 +6,7 @@ import pinterest from "../assets/pinterest.png";
 import linkedIn from '../assets/linkedin.png';
 export default function Footer() {
   return (
-    <div className=' flex w-full h-full p-10  items-center justify-between '>
+    <div className=' flex flex-col gap-20  lg:flex-row  w-full  max-w-[1400px] m-auto h-full p-10  items-center justify-between '>
       <div className='flex gap-10 items-center'>
          <img src = {logo} alt="" />
          <span>Copyrights © 2024. All rights reserved by SyncHomie.com</span>

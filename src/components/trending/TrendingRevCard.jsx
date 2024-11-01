@@ -6,7 +6,7 @@ import thumbsdown from "../../assets/thumbsdown.png";
 export default function TrendingRevCard() {
   return (
     <div className='w-fit h-fit p-[2px] bg-slate-500 rounded-[10px] bg-gradient-to-r from-[#E318F554] to-[#755EFF54]'>
-      <div className='flex flex-col w-fit h-fit p-5 rounded-[10px] 
+      <div className='flex flex-col  w-[320px] md:w-[220px] h-fit p-3 rounded-[10px] 
     gap-10 bg-[#141421] '>
         <div className='flex gap-5'>
           <div>
@@ -24,7 +24,7 @@ export default function TrendingRevCard() {
             <img src={thumbsup} alt="" />
             <img src={thumbsdown} alt="" />
           </div>
-          <div className='font-[300] text-[13px]'>
+          <div className='font-[360] text-[13px]'>
             It's always sunny in Philadelphia
           </div>
         </div>
