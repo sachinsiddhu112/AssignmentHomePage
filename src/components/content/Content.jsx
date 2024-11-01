@@ -8,7 +8,7 @@ export default function Content() {
   const moviesStatus = 'notAdded';
   return (
     <div className='flex flex-col items-center justify-center bg-background w-full max-w-[1300px] overflow-visible h-full text-white mx-auto'>
-      <div className='text-[32px] font-[700] w-full'>Explore the media database on the internet.</div>
+      <div className='text-[32px] ml-10 lg:m-0 font-[700] w-full'>Explore the media database on the internet.</div>
       <Movies itemStatus={moviesStatus} />
       <TVShows itemStatus={moviesStatus} />
       <Anime itemStatus={moviesStatus} />

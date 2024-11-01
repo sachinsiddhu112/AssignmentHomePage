@@ -21,19 +21,19 @@ export default function ContentCard(props) {
       items: 5
     },
     Largetablet: {
-      breakpoint: { max: 1224, min: 950 },
+      breakpoint: { max: 1224, min: 1024 },
       items: 4
     },
     table: {
-      breakpoint: { max: 950, min: 720 },
+      breakpoint: { max: 1024, min: 850 },
       items: 3
     },
     smallTab:{
-      breakpoint:{max:720, min:470},
+      breakpoint:{max:850, min:550},
       items:2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 550, min: 0 },
       items: 1
     }
   }
@@ -44,7 +44,7 @@ export default function ContentCard(props) {
       responsive={responsive}>
         {
           data.map((item) => (
-            <div key={item.id} className='flex flex-col gap-5 w-[300px] md:w-[270px] lg:w-[200px] h-[570px] pb-3  bg-[#1B1B1B] rounded-[10px] ml-7'>
+            <div key={item.id} className='flex flex-col gap-5 w-[300px] md:w-[270px] lg:w-[200px] h-[570px] pb-3  bg-[#1B1B1B] rounded-[10px] m-auto'>
               <div className='relative '>
                 {
                  itemStatus == 'added' ?
