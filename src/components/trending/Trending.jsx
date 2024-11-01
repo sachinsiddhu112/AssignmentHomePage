@@ -92,7 +92,7 @@ export default function Trending() {
             }} className='w-[35px] h-[35px] cursor-pointer' />
         </div>
       </div>
-      <div className='flex  gap-4 max-w-[1400px] scroll-smooth w-full m-auto h-fit overflow-hidden  '
+      <div className='flex  gap-4 max-w-[1300px] scroll-smooth w-full m-auto h-fit overflow-hidden  '
         ref={sliderRef1}
         onMouseDown={handleMouseDown}
         onMouseUp={handleMouseUp}
@@ -128,7 +128,7 @@ export default function Trending() {
       </div>
       <div
         ref={sliderRef2}
-        className='flex gap-5 max-w-[1400px] scroll-smooth  w-full m-auto h-[230px] overflow-hidden items-center justify-center '>
+        className='flex  gap-4 max-w-[1300px] scroll-smooth w-full m-auto h-fit overflow-hidden  '>
 
         <TrendingCommCard />
         <TrendingCommCard />
