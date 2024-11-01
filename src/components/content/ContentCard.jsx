@@ -17,7 +17,7 @@ export default function ContentCard(props) {
       items: 6
     },
     desktop: {
-      breakpoint: { max: 1400, min: 1424 },
+      breakpoint: { max: 1400, min: 1224 },
       items: 5
     },
     Largetablet: {
@@ -25,7 +25,7 @@ export default function ContentCard(props) {
       items: 4
     },
     table: {
-      breakpoint: { max: 950, min: 750 },
+      breakpoint: { max: 950, min: 720 },
       items: 3
     },
     smallTab:{
