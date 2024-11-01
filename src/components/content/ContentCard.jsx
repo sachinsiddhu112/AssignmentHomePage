@@ -17,11 +17,11 @@ export default function ContentCard(props) {
       items: 6
     },
     desktop: {
-      breakpoint: { max: 1400, min: 1024 },
+      breakpoint: { max: 1400, min: 1424 },
       items: 5
     },
     Largetablet: {
-      breakpoint: { max: 1024, min: 950 },
+      breakpoint: { max: 1224, min: 950 },
       items: 4
     },
     table: {
@@ -44,7 +44,7 @@ export default function ContentCard(props) {
       responsive={responsive}>
         {
           data.map((item) => (
-            <div key={item.id} className='flex flex-col gap-5 w-[300px] md:w-[200px] h-[570px] pb-3  bg-[#1B1B1B] rounded-[10px] ml-7'>
+            <div key={item.id} className='flex flex-col gap-5 w-[300px] md:w-[270px] lg:w-[200px] h-[570px] pb-3  bg-[#1B1B1B] rounded-[10px] ml-7'>
               <div className='relative '>
                 {
                  itemStatus == 'added' ?
@@ -52,7 +52,7 @@ export default function ContentCard(props) {
                  : 
                  <img className='absolute' src = {removeContent} alt = 'removed'/>
                 }
-                <img className='w-[290px] md:w-[190px] h-[300px]' src={item.image} alt="poster" />
+                <img className='w-[290px] md:w-[270px]lg:w-[200px] h-[300px]' src={item.image} alt="poster" />
               </div>
               <div className='flex justify-between  px-2'>
                 <span className='font-[400] text-lg'>{item.name}</span>
