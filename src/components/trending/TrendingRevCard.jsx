@@ -6,7 +6,7 @@ import thumbsdown from "../../assets/thumbsdown.png";
 export default function TrendingRevCard() {
   return (
     <div className='w-fit h-fit p-[2px] bg-slate-500 rounded-[10px] bg-gradient-to-r from-[#E318F554] to-[#755EFF54]'>
-      <div className='flex flex-col  w-[300px] md:w-[230px] h-fit p-3 rounded-[10px] 
+      <div className='flex flex-col  w-[270px] md:w-[230px] h-fit p-3 rounded-[10px] 
     gap-10 bg-[#141421] '>
         <div className='flex gap-5'>
           <div>

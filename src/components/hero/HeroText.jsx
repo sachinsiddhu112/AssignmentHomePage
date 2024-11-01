@@ -4,7 +4,7 @@ export default function HeroText() {
     return (
         <div className='flex flex-col w-full h-fit items-center justify-center py-10 z-10 opacity-100'>
            
-            <div className='w-[350px] md:w-[500px] lg:w-[500px] flex flex-col gap-5 py-10 justify-center items-center '>
+            <div className='w-[350px] text-center md:w-[500px] lg:w-[500px] flex flex-col gap-5 py-10 justify-center items-center '>
                 <span className='text-[50px] w-fit font-[800] text-[#AAD0FF] '>SyncHomie</span>
                 <div className='flex flex-col justify-center w-full'>
                     <span className=' block text-[30px] font-[700] w-fit'>

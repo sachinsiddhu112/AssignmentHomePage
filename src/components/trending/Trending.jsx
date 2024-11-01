@@ -17,7 +17,7 @@ export default function Trending() {
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
   const selectSlider = useRef(null);
-
+  const movement = useRef(null);
   // Mouse down event to start dragging
   const handleMouseDown = (e) => {
     console.log('mousedown')
@@ -44,7 +44,7 @@ export default function Trending() {
   const scrollLeftHandler = () => {
     if (selectSlider.current == 'reviews') {
       sliderRef1.current.scrollBy({
-        left: -300,  // Adjust scroll amount
+        left: -290,  // Adjust scroll amount
         behavior: 'smooth',
       });
     }
@@ -60,7 +60,7 @@ export default function Trending() {
   const scrollRightHandler = () => {
     if (selectSlider.current == 'reviews') {
       sliderRef1.current.scrollBy({
-        left: +300,  // Adjust scroll amount
+        left: +290,  // Adjust scroll amount
         behavior: 'smooth',
       });
     }
@@ -73,23 +73,23 @@ export default function Trending() {
   };
 
   return (
-    <div className=' flex flex-col w-full max-w-[1350px] h-full p-10 gap-[20px] items-center justify-center m-auto  '>
-      <div className='flex justify-between w-full max-w-[1300px] h-fit px-5'>
-        <div className='flex gap-1 w-full  h-fit items-center'>
+    <div className=' flex flex-col w-full max-w-[1350px] h-full p-4 gap-[20px] items-center justify-center m-auto  '>
+      <div className='flex justify-between w-full max-w-[1300px] h-fit px-2 md:px-5'>
+        <div className='flex gap-1 w-fit md:w-full  h-fit items-center'>
           <div className='w-[5px] h-[5px] bg-yellow-300 rounded-full'></div>
-          <span className=' flex gap-5 font-[400] text-[28px] w-fit'>Trending Reviews</span>
+          <span className=' flex  font-[400] text-[24px] md:text-[28px] w-fit'>Trending Reviews</span>
         </div>
-        <div className='flex gap-2 bg-[#A3A3A30D] px-3 py-2 rounded-md'>
+        <div className='flex gap-2 bg-[#A3A3A30D] ps-2 md:px-3 py-2 rounded-md'>
           <img src={ArrowCircleLeft}
             onClick={() => {
               selectSlider.current = 'reviews'
               scrollLeftHandler()
-            }} className='w-[30px] h-[30px] cursor-pointer' />
+            }} className='w-[22px] h-[22px]  md:w-[30px] md:h-[30px] cursor-pointer' />
           <img src={ArrowCircleRight}
             onClick={() => {
               selectSlider.current = 'reviews'
               scrollRightHandler()
-            }} className='w-[35px] h-[35px] cursor-pointer' />
+            }} className=' w-[28px] h-[28px] md:w-[35px] md:h-[35px] cursor-pointer' />
         </div>
       </div>
       <div className='flex  gap-4 max-w-[1300px] scroll-smooth w-full m-auto h-fit overflow-hidden  '
@@ -107,28 +107,28 @@ export default function Trending() {
         <TrendingRevCard />
 
       </div>
-      <div className='flex justify-between w-full max-w-[1300px] h-fit px-5 mt-8'>
+      <div className='flex justify-between w-full max-w-[1300px] h-fit px-2 md:px-5 mt-8'>
         <div className='flex gap-1 w-full  h-fit items-center'>
           <div className='w-[5px] h-[5px] bg-yellow-300 rounded-full'></div>
-          <span className=' flex gap-5 font-[400] 
-          text-[28px] w-full'>Trending Comments</span>
+          <span className=' flex gap-5 font-[400] text-[24px]
+          md:text-[28px] w-full'>Trending Comments</span>
         </div>
-        <div className='flex gap-2 bg-[#A3A3A30D] px-3 py-2 rounded-md'>
+        <div className='flex gap-2 bg-[#A3A3A30D] ps-2 md:px-3 py-2 rounded-md'>
           <img src={ArrowCircleLeft}
             onClick={() => {
               selectSlider.current = 'comments'
               scrollLeftHandler()
-            }} className='w-[30px] h-[30px] cursor-pointer' />
+            }} className='w-[22px] h-[22px]  md:w-[30px] md:h-[30px] cursor-pointer' />
           <img src={ArrowCircleRight}
             onClick={() => {
               selectSlider.current = 'comments'
               scrollRightHandler()
-            }} className='w-[35px] h-[35px] cursor-pointer' />
+            }} className=' w-[28px] h-[28px] md:w-[35px] md:h-[35px] cursor-pointer' />
         </div>
       </div>
       <div
         ref={sliderRef2}
-        className='flex  gap-4 max-w-[1300px] scroll-smooth w-full m-auto h-fit overflow-hidden  '>
+        className='flex gap-4 max-w-[1300px] scroll-smooth w-full m-auto h-fit overflow-hidden p-3  '>
 
         <TrendingCommCard />
         <TrendingCommCard />

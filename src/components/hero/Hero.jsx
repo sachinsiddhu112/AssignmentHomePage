@@ -11,12 +11,15 @@ export default function Hero() {
       if (window.innerWidth < 700) {
         setSmallWindow(true);
       }
+      else{
+        setSmallWindow(false)
+      }
     });
   }
   useEffect(() => {
     handleWidth();
     return () => window.removeEventListener('resize', handleWidth)
-  }, [])
+  }, [window.innerWidth])
   return (
     <div className='flex flex-col gap-10 w-full h-[100] justify-center items-center '>
 
